@@ -46,13 +46,17 @@ script.on_event(ev.on_player_setup_blueprint, function(event)
 
             if pos.x < min_x then
                 min_x = pos.x
-            elseif pos.x > max_x then
+            end
+
+            if pos.x > max_x then
                 max_x = pos.x
             end
 
             if pos.y < min_y then
                 min_y = pos.y
-            elseif pos.y > max_y then
+            end
+
+            if pos.y > max_y then
                 max_y = pos.y
             end
         end
@@ -69,13 +73,17 @@ script.on_event(ev.on_player_setup_blueprint, function(event)
 
                 if pos.x < min_x then
                     min_x = pos.x
-                elseif pos.x > max_x then
+                end
+
+                if pos.x > max_x then
                     max_x = pos.x
                 end
 
                 if pos.y < min_y then
                     min_y = pos.y
-                elseif pos.y > max_y then
+                end
+
+                if pos.y > max_y then
                     max_y = pos.y
                 end
             end
