@@ -16,7 +16,7 @@ script.on_event(ev.on_player_setup_blueprint, function(event)
 
     local bp = player.blueprint_to_setup
     if not bp or not bp.valid or not bp.valid_for_read or not bp.is_blueprint_setup() then
-        player.print("Unable to add meta info to blueprint.")
+        log("Unable to add meta info to blueprint.")
         return
     end
 
